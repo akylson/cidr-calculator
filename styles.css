@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.form-control-lg {
+    font-size: 1.5rem;
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    min-width: 60px; /* Уменьшенная минимальная ширина */
+}
+
+.ip-field {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+}
+
+.info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.lang-switcher {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lang-button {
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-group label {
+        text-align: center;
+    }
+
+    .ip-field {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        min-width: 50px;
+    }
+
+    .form-control-lg {
+        font-size: 1.2rem;
+        height: calc(1.2em + 0.75rem + 2px);
+        width: auto; /* Поля ввода автоширины */
+        max-width: 80px; /* Максимальная ширина полей ввода */
+    }
+
+    .lang-button {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
